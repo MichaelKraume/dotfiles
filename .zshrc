@@ -130,4 +130,4 @@ mkdir -p ./$folder_name
 cp $copy_from ./$folder_name/$file_name.tex
 }
 neofetch
-alias config='/usr/bin/git --git-dir=/home/michaelk/git/dotfiles --work-tree=/home/michaelk'
+alias config='/usr/bin/git --git-dir=/home/micha/git/dotfiles --work-tree=/home/micha'
