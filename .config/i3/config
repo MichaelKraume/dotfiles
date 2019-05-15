@@ -15,7 +15,7 @@ gaps inner 5
 gaps outer 5
 focus_follows_mouse no
 
-set $term --no-startup-id $TERMINAL
+set $term --no-startup-id xst
 set $mod Mod4
 set $shutdown --no-startup-id sudo shutdown -h now
 set $reboot --no-startup-id sudo -A reboot
@@ -47,8 +47,8 @@ bar {
 
 
 # basic bindings
-bindsym $mod+Return exec i3-sensible-terminal
-bindsym Ctrl+Mod1+t exec st -n dropdown
+bindsym $mod+Return exec xst
+bindsym Ctrl+Mod1+t exec xst -n dropdown
 
 bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle

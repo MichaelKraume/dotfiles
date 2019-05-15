@@ -1,6 +1,6 @@
-st.font: 	 Fira Mono:pixelsize=12:antialias=true:autohint=true
+st.font: 	 Fira Mono:pixelsize=14:antialias=true:autohint=true
 st.shell: 	 /usr/bin/zsh
-st.cursorshape:  5
+st.cursorshape:  2
 
 st.foreground:   #a7a7a7
 st.background:   #1e1e1e
@@ -25,4 +25,4 @@ st.color17:      #9b703f
 st.color18:      #323537
 st.color19:      #464b50
 st.color20:      #838184
-st.color21: #c3c3c3
+st.color21: 	 #c3c3c3
