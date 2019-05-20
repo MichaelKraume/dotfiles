@@ -2,9 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-        for d in $HOME/.scripts/*; do
-                    PATH+=":$d"
-        done
+ #       for d in $HOME/.scripts/*; do
+  #                  PATH+=":$d"
+   #     done
         export ZSH="$HOME/.oh-my-zsh"
         export EDITOR="nvim"
         export TERMINAL="$(which xst)"
