@@ -15,7 +15,7 @@ gaps inner 5
 gaps outer 5
 focus_follows_mouse no
 
-set $term --no-startup-id xst
+set $term --no-startup-id urxvt
 set $mod Mod4
 set $shutdown --no-startup-id sudo shutdown -h now
 set $reboot --no-startup-id sudo -A reboot
@@ -38,17 +38,15 @@ for_window [instance="dropdown_*"] move position center
 
 
 bar {
-        font pango:mono 10
-        status_command i3status
-        position top
-        mode dock
-        modifier None
+	status_command i3status
+	position top
+
 }
 
 
 # basic bindings
-bindsym $mod+Return exec xst
-bindsym Ctrl+Mod1+t exec xst -n dropdown
+bindsym $mod+Return exec urxvt
+bindsym Ctrl+Mod1+t exec urxvt -name dropdown 
 
 bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle
@@ -96,7 +94,7 @@ bindsym $mod+Shift+x                [con_id="__focused__" instance="^(?!dropdown
 #bindsym $mod+Shift+x kill
 
 # start dmenu (a program launcher)
-bindsym $mod+a exec dmenu_run
+bindsym $mod+a exec j4-dmenu-desktop
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
