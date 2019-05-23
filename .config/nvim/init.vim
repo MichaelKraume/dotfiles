@@ -105,7 +105,7 @@ call vundle#end()
 
 	
 	autocmd filetype tex,plaintex inoremap ⌀ \rightarrow
-	autocmd filetype tex,plaintex inoremap ⇒ \rightarrow
+	autocmd filetype tex,plaintex inoremap → \rightarrow
 	autocmd filetype tex,plaintex inoremap ⇐ \leftarrow
 	autocmd filetype tex,plaintex inoremap × \times
 	autocmd filetype tex,plaintex inoremap ∓ \mp
