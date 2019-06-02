@@ -11,7 +11,6 @@ Plugin 'valloric/youcompleteme'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
-
 "git
 Plugin 'airblade/vim-gitgutter'
 
@@ -25,8 +24,9 @@ Plugin 'auto-pairs-gentle'
 Plugin 'donraphaco/neotex', { 'for': 'tex' }
 Plugin 'Align'
 
-"latex
+"R
 Plugin 'jalvesaq/nvim-r'
+Plugin 'rizzatti/dash.vim'
 call vundle#end()
 "general stuff
         set number relativenumber
@@ -78,6 +78,9 @@ call vundle#end()
                 let g:UltiSnipsJumpForwardTrigger = "<tab>"
                 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
+"R
+autocmd filetype r nmap <silent> <leader>d <Plug>DashSearch<CR>
+
 "Latex
         autocmd filetype tex,plaintex hi Error NONE
         autocmd filetype tex,plaintex let g:AutoPairs = {"$$":"$$",'$':'$','(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
@@ -128,6 +131,9 @@ call vundle#end()
 	autocmd filetype tex,plaintex inoremap ∈ \in
 	autocmd filetype tex,plaintex inoremap ∪ \cup
 	autocmd filetype tex,plaintex inoremap ∩ \cap
+	
+	autocmd filetype tex inoremap <F5> <Esc>:w<CR>:!pdflatex<space>%<CR><CR>a
+	autocmd filetype tex nnoremap <F5> :w<CR>:!pdflatex<space>%<CR><CR>
 
 	"Align Tables
         "        autocmd filetype tex inoremap <silent> & &<Esc>:Align & <cr>f&a
