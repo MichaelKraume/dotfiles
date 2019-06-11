@@ -7,7 +7,7 @@
    #     done
         export ZSH="$HOME/.oh-my-zsh"
         export EDITOR="nvim"
-        export TERMINAL="$(which xst)"
+        export TERMINAL="$(which st)"
         export BROWSER="firefox"
 
  	export WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>'
