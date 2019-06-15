@@ -133,6 +133,6 @@ fi
 mkdir -p ./$folder_name
 cp $copy_from ./$folder_name/$file_name.tex
 }
-alias config='/usr/bin/gti --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
-alias homework='/usr/bin/gti --git-dir=$HOME/git/homework --work-tree=$HOME/Dokumente/Uni'
+alias config='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
+alias homework='/usr/bin/git --git-dir=$HOME/git/homework --work-tree=$HOME/Dokumente/Uni'
 neofetch | lolcat
