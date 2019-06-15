@@ -1,0 +1,23 @@
+#!/bin/bash
+[[ $(LC_ALL=C nmcli -f wifi -t g s) == 'disabled' ]] && exit 0
+network_name=$(
+	LC_ALL=C  nmcli -t -f name,device c s -a\
+		| cut -d':' -f1
+)
+interface=${BLOCK_INSTANCE:-wlp3s0}
+quality=$(
+	grep $interface /proc/net/wireless \
+		| awk '{print int($3)}'
+)
+if [[ $quality -ge 56 ]]; then
+	color="#00FF00"
+elif [[ $quality -ge 42  ]]; then
+	color="#FFF600"
+elif [[ $quality -ge 28 ]]; then
+	color="#FFAE00"
+else
+	color="#FF0000"
+fi
+echo $network_name $quality
+echo $network_name $quality
+echo $color

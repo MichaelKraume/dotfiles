@@ -1,4 +1,4 @@
- # If you come from bash you might have to change your $PATH.
+ 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -7,7 +7,7 @@
    #     done
         export ZSH="$HOME/.oh-my-zsh"
         export EDITOR="nvim"
-        export TERMINAL="$(which st)"
+        export TERMINAL="$(which alacritty)"
         export BROWSER="firefox"
 
  	export WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>'
@@ -133,5 +133,6 @@ fi
 mkdir -p ./$folder_name
 cp $copy_from ./$folder_name/$file_name.tex
 }
-alias config='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
+alias config='/usr/bin/gti --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
+alias homework='/usr/bin/gti --git-dir=$HOME/git/homework --work-tree=$HOME/Dokumente/Uni'
 neofetch | lolcat

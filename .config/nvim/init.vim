@@ -59,6 +59,7 @@ call vundle#end()
                 nnoremap <C-S-tab> :tabprevious<CR>
 		nnoremap <q> :q<CR>
 		nnoremap G G$
+		inoremap <C-G> <Esc>G$a
 " airline
         let g:airline#extensions#tabline#enabled = 1
         let g:airline_theme='papercolor'
