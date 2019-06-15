@@ -81,10 +81,10 @@ label=
 interval=10
 separator=false
 
-[bandwidth]
-label=
+#[bandwidth]
+#label=
 #INTERFACE=eth0
-interval=5
+#interval=5
 
 # CPU usage
 #
