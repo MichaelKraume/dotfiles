@@ -101,6 +101,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+function sl()
+{
+	/usr/bin/sl
+	clear
+	ls $@
+}
 function ranger()
 {
         /usr/bin/ranger --choosedir=$HOME/.rangerdir $@

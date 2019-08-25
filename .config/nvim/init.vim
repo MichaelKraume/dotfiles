@@ -19,6 +19,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nlknguyen/papercolor-theme'
 Plugin 'chiel92/vim-autoformat'
+Plugin 'thaerkh/vim-indentguides'
 
 Plugin 'auto-pairs-gentle'
 "latex
