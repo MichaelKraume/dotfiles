@@ -60,10 +60,17 @@ handle_extension() {
         # PDF
         pdf)
             # Preview as text conversion
+<<<<<<< HEAD
         #    pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | fmt -w ${PV_WIDTH} && exit 5
         #    mutool draw -F txt -i -- "${FILE_PATH}" 1-10 | fmt -w ${PV_WIDTH} && exit 5
         #    exiftool "${FILE_PATH}" && exit 5
         #    exit 1;;
+=======
+            pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | fmt -w ${PV_WIDTH} && exit 5
+            mutool draw -F txt -i -- "${FILE_PATH}" 1-10 | fmt -w ${PV_WIDTH} && exit 5
+            exiftool "${FILE_PATH}" && exit 5
+            exit 1;;
+>>>>>>> ac0cf3b7b0136a9aaeee259ac6cb2d286d207d59
 
         # BitTorrent
         torrent)
