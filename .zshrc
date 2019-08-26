@@ -12,10 +12,8 @@
 	export WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>'
 	bindkey ';5D' backward-word
 	bindkey ';5C' forward-word
-<<<<<<< HEAD
 ZSH_THEME="agnoster_custom"
 
-=======
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -27,7 +25,6 @@ ZSH_THEME="agnoster_custom"
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
->>>>>>> ac0cf3b7b0136a9aaeee259ac6cb2d286d207d59
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
