@@ -1,0 +1,26 @@
+
+function homeworkFromTemplate ()
+{
+folder_name=$1
+if [ "$#" -eq 1 ];
+then
+        file_name=$1
+elif [ "$#" -eq 2 ];
+then
+        file_name=$2
+else
+        exit 1
+fi
+
+if [ -d "./Template/" ] && [ -e "./Template/template.tex" ];
+then
+        copy_from="./Template/template.tex"
+else
+        echo -e "no template here; instead use:"
+        read -i "$HOME/Templates/" -e copy_from
+        #if [ "$" ]
+fi
+
+mkdir -p ./$folder_name
+cp $copy_from ./$folder_name/$file_name.tex
+}

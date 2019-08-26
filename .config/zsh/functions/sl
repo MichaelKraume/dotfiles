@@ -1,0 +1,6 @@
+function sl()
+{
+	/usr/bin/sl
+	clear
+	ls $@
+}

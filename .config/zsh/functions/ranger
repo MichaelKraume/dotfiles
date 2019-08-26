@@ -1,0 +1,8 @@
+
+function ranger()
+{
+        /usr/bin/ranger --choosedir=$HOME/.rangerdir $@
+        LASTDIR=`cat $HOME/.rangerdir`
+        cd $LASTDIR
+        echo -n > $HOME/.rangerdir
+}

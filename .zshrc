@@ -1,29 +1,19 @@
  
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
- #       for d in $HOME/.scripts/*; do
-  #                  PATH+=":$d"
-   #     done
-        export ZSH="$HOME/.oh-my-zsh"
-        export EDITOR="nvim"
-        export TERMINAL="$(which alacritty)"
-        export BROWSER="firefox"
-
- 	export WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>'
+#PATH+="$HOME/.scripts"
+	for d in $HOME/.scripts/*; do
+		PATH+=":$d"
+	done
+# export some variables.
+	export ZSH="$HOME/.oh-my-zsh"
+	export EDITOR="nvim"
+	export TERMINAL="$(which alacritty)"
+	export BROWSER="firefox"
+#use ctrl+<l/r> to move by words
+	export WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>'
 	bindkey ';5D' backward-word
 	bindkey ';5C' forward-word
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster_custom"
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -36,7 +26,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# export UPDATE_ZSH_DAYS=21
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -48,7 +38,7 @@ ZSH_THEME="agnoster"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -61,7 +51,7 @@ ZSH_THEME="agnoster"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+ HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -90,7 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+ export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -106,6 +96,10 @@ function sl()
 	/usr/bin/sl
 	clear
 	ls $@
+}
+function taclol
+{
+	tac $@ | lolcat
 }
 function ranger()
 {
@@ -141,4 +135,4 @@ cp $copy_from ./$folder_name/$file_name.tex
 }
 alias config='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
 alias homework='/usr/bin/git --git-dir=$HOME/git/homework --work-tree=$HOME/Dokumente/Uni'
-neofetch | lolcat
+neofetch #| lolcat
