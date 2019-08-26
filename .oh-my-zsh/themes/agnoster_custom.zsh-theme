@@ -198,7 +198,12 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%~'
+  local -a statuscolor
+	statuscolor=green
+	[[ $RETVAL -ne 0 ]] && statuscolor=red
+	[[ $UID -eq 0 ]] && statuscolor=yellow
+	[[ $(jobs -l | wc -l) -gt 0 ]] && statuscolor=blue
+	prompt_segment $statuscolor $CURRENT_FG '%~'
 }
 
 # Virtualenv: current working virtualenv
@@ -216,8 +221,8 @@ prompt_virtualenv() {
 prompt_status() {
   local -a symbols
 
-  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}✘"
-  [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
+#  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}✘"
+#  [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
 
   [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
