@@ -13,7 +13,7 @@ set $hibernate --no-startup-id sudo -A systemctl suspend
 #Dropdown windows
 for_window [instance="dropdown_*"] floating enable
 for_window [instance="dropdown_*"] move scratchpad
-for_window [instance="dropdown_*"] sticky enable
+#for_window [instance="dropdown_*"] sticky enable
 for_window [instance="dropdown_*"] resize set 1084 612
 for_window [instance="dropdown_*"] scratchpad show
 for_window [instance="dropdown_*"] move position 150 100
