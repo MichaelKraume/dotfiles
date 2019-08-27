@@ -1,0 +1,18 @@
+program_options:
+  udisks_version: 2
+  tray: auto
+  automount: true
+  notify: false
+
+mount_options:
+- id_type: ext4
+  options: [noatime, sync]
+- id_type: crypto_LUKS
+  automount: False
+- id_uuid: 3532-9EA8
+  automount: False
+  options: [noatime]
+- id_uuid: 5b9e7387-4e98-4e2a-ba72-eca80ffdf5e3
+  automount: False
+  keyfile: /home/micha/.keys/Cabose.key
+
