@@ -1,0 +1,8 @@
+#!/bin/bash
+filecheck=$(file -b $1)
+if [[ $filecheck == GPG* ]] || [[ $filecheck == PGP* ]]; then
+	return=1
+else
+	return=0
+fi
+echo $return
