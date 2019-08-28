@@ -1,6 +1,8 @@
 function sl()
 {
-	/usr/bin/sl
-	clear
+	if [[ -e /usr/bin/sl ]]; then
+		/usr/bin/sl
+		clear
+	fi
 	ls $@
 }

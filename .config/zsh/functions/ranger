@@ -1,4 +1,3 @@
-
 function ranger()
 {
         /usr/bin/ranger --choosedir=$HOME/.rangerdir $@

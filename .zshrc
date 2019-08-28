@@ -1,8 +1,8 @@
  
-#PATH+="$HOME/.scripts"
-	for d in $HOME/.scripts/*; do
-		PATH+=":$d"
-	done
+PATH+=":$HOME/.scripts"
+#	for d in $HOME/.scripts/*; do
+#		PATH+=":$d"
+#	done
 # export some variables.
 	export ZSH="$HOME/.oh-my-zsh"
 	export EDITOR="nvim"
@@ -95,48 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-function sl()
-{
-	/usr/bin/sl
-	clear
-	ls $@
-}
-function taclol
-{
-	tac $@ | lolcat
-}
-function ranger()
-{
-        /usr/bin/ranger --choosedir=$HOME/.rangerdir $@
-        LASTDIR=`cat $HOME/.rangerdir`
-        cd $LASTDIR
-        echo -n > $HOME/.rangerdir
-}
-function homeworkFromTemplate ()
-{
-folder_name=$1
-if [ "$#" -eq 1 ];
-then
-        file_name=$1
-elif [ "$#" -eq 2 ];
-then
-        file_name=$2
-else
-        exit 1
-fi
-
-if [ -d "./Template/" ] && [ -e "./Template/template.tex" ];
-then
-        copy_from="./Template/template.tex"
-else
-        echo -e "no template here; instead use:"
-        read -i "$HOME/Templates/" -e copy_from
-        #if [ "$" ]
-fi
-
-mkdir -p ./$folder_name
-cp $copy_from ./$folder_name/$file_name.tex
-}
+for file in ~/.config/zsh/functions/*; do
+	source $file
+done
 alias config='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
 alias homework='/usr/bin/git --git-dir=$HOME/git/homework --work-tree=$HOME/Dokumente/Uni'
 neofetch #| lolcat
