@@ -18,4 +18,4 @@ function $EDITOR (){
 		$edit $nocrypt
 	fi	
 }
-#TODO: make it fancy by deleting from $param array, better yet from $@ array
+#TODO: make it fancy by deleting from $@ array
