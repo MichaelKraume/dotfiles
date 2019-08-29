@@ -154,4 +154,4 @@ bindsym XF86AudioMute 		exec --no-startup-id pactl set-sink-mute 2 toggle; exec 
 exec feh --recursive --randomize --bg-fill $HOME/.wallpapers/
 exec [[ $HOST == 'MichasLaptop' ]] && bluetoothctl power on
 exec --no-startup-id compton --config $HOME/.config/compton/compton.conf
-exec --no-startup-id udiskie -a -n
+exec --no-startup-id udiskie -a -n -T

@@ -3,7 +3,7 @@ function $EDITOR (){
 	crypt=()
 	nocrypt=()
 	for param in "$@"; do
-		if [[ -f "$file" ]]&&[[ $(checkifencrypted $param) -eq 1 ]]; then
+		if [[ -f "$param" ]]&&[[ $(checkifencrypted $param) -eq 1 ]]; then
 			crypt+="$param"
 		else
 			nocrypt+="$param"
