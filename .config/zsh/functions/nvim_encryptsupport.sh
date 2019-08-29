@@ -9,8 +9,8 @@ function $EDITOR (){
 			nocrypt+="$param"
 		fi
 	done
-	echo "encrypted $crypt"
-	echo "not encrypted $nocrypt"
+	#echo "encrypted $crypt"
+	#echo "not encrypted $nocrypt"
 	for cf in $crypt; do
 		viencrypt $cf
 	done

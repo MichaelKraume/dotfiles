@@ -29,7 +29,6 @@ Plugin 'Align'
 "R
 Plugin 'jalvesaq/nvim-r'
 Plugin 'rizzatti/dash.vim'
-"Encryption
 call vundle#end()
 "general stuff
         set number relativenumber
