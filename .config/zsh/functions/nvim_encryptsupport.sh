@@ -2,11 +2,16 @@ edit=$(which $EDITOR)
 function $EDITOR (){
 	crypt=()
 	nocrypt=()
+	nofile=()
 	for param in "$@"; do
-		if [[ -f "$param" ]]&&[[ $(checkifencrypted $param) -eq 1 ]]; then
-			crypt+="$param"
+		if [[ ! -f "$param" ]]; then
+			nofile+="$param"
 		else
-			nocrypt+="$param"
+			if [[ $(checkifencrypted $param) -eq 1 ]]; then
+				crypt+="$param"
+			else
+				nocrypt+="$param"
+			fi
 		fi
 	done
 	#echo "encrypted $crypt"
@@ -15,7 +20,7 @@ function $EDITOR (){
 		viencrypt $cf
 	done
 	if [[ $nocrypt ]] || [[ $# -eq 0 ]]; then
-		$edit $nocrypt
+		$edit $nofile $nocrypt
 	fi	
 }
 #TODO: make it fancy by deleting from $@ array
