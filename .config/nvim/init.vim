@@ -18,8 +18,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nlknguyen/papercolor-theme'
-Plugin 'chiel92/vim-autoformat'
-Plugin 'thaerkh/vim-indentguides'
+"Plugin 'chiel92/vim-autoformat'
 
 Plugin 'auto-pairs-gentle'
 "latex
@@ -88,7 +87,7 @@ autocmd filetype r nmap <silent> <leader>d <Plug>DashSearch<CR>
 
 "Latex
         autocmd filetype tex,plaintex hi Error NONE
-        autocmd filetype tex,plaintex let g:AutoPairs = {"$$":"$$",'$':'$','(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
+	autocmd filetype tex,plaintex let g:AutoPairs = {'$$':'$$','$':'$','(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
         autocmd filetype tex,plaintex inoremap γ \gamma
         autocmd filetype tex,plaintex inoremap Γ \Gamma
         autocmd filetype tex,plaintex inoremap θ \theta

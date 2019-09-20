@@ -221,3 +221,36 @@ ${2:${VISUAL:code}}
 $0
 endsnippet
 # vim:ft=snippets:
+snippet nt "new theorem"
+\newtheorem{${1:name}}{${2:printed output}}
+endsnippet
+snippet thm "theorem"
+\begin{theorem}${2:[${1:autor}]}
+${3:%Inhalt}
+\end{theorem}
+
+endsnippet
+snippet def "definition"
+\begin{definition}${2:[${1:autor}]}
+${3:%Inhalt}
+\end{definition}
+
+endsnippet
+snippet lem "lemma"
+\begin{lemma}${2:[${1:autor}]}
+${3:%Inhalt}
+\end{lemma}
+
+endsnippet
+snippet cor "corollary"
+\begin{corollary}${2:[${1:autor}]}
+${3:%Inhalt}
+\end{corollary}
+
+endsnippet
+snippet rem "remark"
+\begin{remark}${2:[${1:autor}]}
+${3:%Inhalt}
+\end{remark}
+
+endsnippet

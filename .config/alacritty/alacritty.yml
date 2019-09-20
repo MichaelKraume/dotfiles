@@ -102,7 +102,7 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-        family:  Fira Mono
+        family:  FuraCode Nerd Font
         style: Regular
     # Default:
     #   - (macOS) Menlo
