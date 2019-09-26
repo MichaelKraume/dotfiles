@@ -152,7 +152,7 @@ bindsym XF86AudioLowerVolume 	exec --no-startup-id pactl set-sink-volume 2 -1%; 
 bindsym XF86AudioMute 		exec --no-startup-id pactl set-sink-mute 2 toggle; exec pkill -RTMIN+10 i3blocks 
 
 # Startup scripts
-exec feh --recursive --randomize --bg-fill $HOME/.wallpapers/
+exec feh --recursive --randomize --bg-fill $HOME/Bilder/wallpapers
 exec [[ $HOST == 'MichasLaptop' ]] && bluetoothctl power on
 exec --no-startup-id compton --config $HOME/.config/compton/compton.conf
 exec --no-startup-id udiskie -a -n -T

@@ -1,8 +1,5 @@
  
 PATH+=":$HOME/.scripts"
-#	for d in $HOME/.scripts/*; do
-#		PATH+=":$d"
-#	done
 # export some variables.
 	export ZSH="$HOME/.oh-my-zsh"
 	export EDITOR="nvim"
@@ -98,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 for file in ~/.config/zsh/functions/*; do
 	source $file
 done
-alias config='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
-alias homework='/usr/bin/git --git-dir=$HOME/git/homework --work-tree=$HOME/Dokumente/Uni'
+alias dotfiles-git='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
+alias homework-git='/usr/bin/git --git-dir=$HOME/git/homework --work-tree=$HOME/Dokumente/Uni'
+alias wurzel-git='/usr/bin/git --git-dir=$HOME/git/wurzel --work-tree=$HOME/Dokumente/Wurzel'
 neofetch #| lolcat
