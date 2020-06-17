@@ -9,7 +9,7 @@ elif [ "$#" -eq 2 ];
 then
         file_name=$2
 else
-        exit 1
+        return 1
 fi
 
 if [ -d "./Template/" ] && [ -e "./Template/template.tex" ];

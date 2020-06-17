@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<opml version="1.0">
+	<head>
+		<title>Breaker Subscriptions</title>
+	</head>
+	<body>
+		<outline title="Sprechstunde" xmlUrl="https://rss.simplecast.com/podcasts/7603/rss" type="rss" text="Sprechstunde" />
+	</body>
+</opml>

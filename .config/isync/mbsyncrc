@@ -1,0 +1,23 @@
+IMAPStore michael.kraume@web.de-remote
+Host imap.web.de
+Port  993
+User michael.kraume@web.de
+PassCmd "pass mailwizard-michael.kraume@web.de"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore michael.kraume@web.de-local
+Subfolders Verbatim
+Path /home/micha/mail/michael.kraume@web.de/
+Inbox /home/micha/mail/michael.kraume@web.de/INBOX
+
+Channel michael.kraume@web.de
+Expunge Both
+Master :michael.kraume@web.de-remote:
+Slave :michael.kraume@web.de-local:
+Patterns * !"_/*" !"[Gmail]" !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+# End mailwizard profile
+

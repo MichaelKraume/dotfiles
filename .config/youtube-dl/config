@@ -1,0 +1,2 @@
+--ignore-errors
+-o ~/Downloads/youtube-dl/%(title)s.%(ext)s

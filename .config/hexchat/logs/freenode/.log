@@ -1,0 +1,22 @@
+**** BEGINNE LOGBUCH UM Mon Nov 25 18:20:22 2019
+
+Nov 25 18:20:22 *	Verbinden zu chat.freenode.net (91.217.189.42:6697)
+Nov 25 18:20:22 *	* Subject: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Nov 25 18:20:22 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Nov 25 18:20:22 *	* Subject: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Nov 25 18:20:22 *	* Issuer: /O=Digital Signature Trust Co./CN=DST Root CA X3
+Nov 25 18:20:22 *	* Subject: /CN=sinisalo.freenode.net
+Nov 25 18:20:22 *	* Issuer: /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3
+Nov 25 18:20:23 *	* Certification info:
+Nov 25 18:20:23 *	  Subject:
+Nov 25 18:20:23 *	    CN=sinisalo.freenode.net
+Nov 25 18:20:23 *	  Issuer:
+Nov 25 18:20:23 *	    C=US
+Nov 25 18:20:23 *	    O=Let's Encrypt
+Nov 25 18:20:23 *	    CN=Let's Encrypt Authority X3
+Nov 25 18:20:23 *	  Public key algorithm: rsaEncryption (4096 bits)
+Nov 25 18:20:23 *	  Sign algorithm sha256WithRSAEncryption
+Nov 25 18:20:23 *	  Valid since Nov  4 05:02:52 2019 GM to Feb  2 05:02:52 2020 GM
+Nov 25 18:20:23 *	* Cipher info:
+Nov 25 18:20:23 *	  Version: TLSv1.2, cipher ECDHE-RSA-AES256-GCM-SHA384 (256 bits)
+Nov 25 18:20:23 *	Verbunden. Anmeldevorgang läuft.

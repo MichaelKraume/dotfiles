@@ -1,0 +1,10 @@
+# GIMP gimp-vector-tool options
+
+(background (color-rgb 0.015075376884422065 0.014194348365202595 0.014194348365202595))
+(brush "2. Block 03")
+(dynamics "Dynamics Off")
+(pattern "Pine")
+(gradient "VG nach HG (RGB)")
+(palette "Farbchronik")
+
+# end of gimp-vector-tool options

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "coc-actions": ">=1.4.0",
+    "coc-bookmark": ">=1.2.5",
+    "coc-calc": ">=1.6.0",
+    "coc-clangd": ">=0.4.10",
+    "coc-cmake": ">=0.0.1",
+    "coc-discord": ">=0.0.3",
+    "coc-git": ">=1.7.15",
+    "coc-pairs": ">=1.2.21",
+    "coc-python": ">=1.2.12",
+    "coc-snippets": ">=2.1.28",
+    "coc-texlab": ">=2.1.0"
+  }
+}

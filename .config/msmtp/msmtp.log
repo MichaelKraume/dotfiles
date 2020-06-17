@@ -1,0 +1,2 @@
+Jun 07 23:26:56 host=posteo.de tls=on auth=on user=michael.kraume@posteo.de from=michael.kraume@posteo.de recipients=post@waldorf-frommer.de mailsize=2832535 smtpstatus=250 smtpmsg='250 2.0.0 Ok: queued as 49g8bF4Plzz6tmX' exitcode=EX_OK
+Jun 09 09:38:36 host=smtp.uni-jena.de tls=on auth=on user=michael.kraume@uni-jena.de from=michael.kraume@uni-jena.de recipients=thoska@uni-jena.de mailsize=688 smtpstatus=250 smtpmsg='250 2.0.0 Ok: queued as 49h26h2qNVzFnJ0' exitcode=EX_OK

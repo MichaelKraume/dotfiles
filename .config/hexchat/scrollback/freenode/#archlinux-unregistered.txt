@@ -1,0 +1,4 @@
+T 1574702466 19*	Sie sprechen jetzt in 22#archlinux-unregistered
+T 1574702466 22*	Das Thema für 22#archlinux-unregistered ist: === You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ===
+T 1574702466 22*	Das Thema für 22#archlinux-unregistered wurde von 26tigrmesh!~tigrmesh@archlinux/op/tigrmesh (24Tue Aug  9 06:33:51 2016) gesetzt.
+T 1574702467 24*	Ein CTCP 24VERSION von 18EMIYA wurde erhalten.

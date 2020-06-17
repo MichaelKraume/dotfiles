@@ -1,0 +1,9 @@
+2020/05/24-16:28:09.522 4aa Reusing MANIFEST leveldb/MANIFEST-000001
+2020/05/24-16:28:09.536 4aa Recovering log #62
+2020/05/24-16:28:09.551 4aa Reusing old log leveldb/000062.log 
+2020/05/24-17:31:09.112 4a7 Level-0 table #66: started
+2020/05/24-17:31:09.151 4a7 Level-0 table #66: 9886 bytes OK
+2020/05/24-17:31:09.185 4a7 Delete type=0 #62
+2020/05/24-19:17:09.114 4aa Level-0 table #68: started
+2020/05/24-19:17:09.148 4aa Level-0 table #68: 9612 bytes OK
+2020/05/24-19:17:09.174 4aa Delete type=0 #65

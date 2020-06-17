@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/micha/Dokumente/Uni/MatheSem4/Klassische Differentialgeometrie/01'
+let g:netrw_dirhist_4='/home/micha/Dokumente/Uni/MatheSem4/Klassische Differentialgeometrie'
+let g:netrw_dirhist_3='/home/micha/Dokumente/Uni/MatheSem4'
+let g:netrw_dirhist_2='/home/micha/Dokumente/Uni'
+let g:netrw_dirhist_1='/home/micha/Dokumente/Uni/MatheSem3'

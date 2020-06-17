@@ -1,0 +1,5 @@
+2020/05/25-21:07:51.918 1209e Reusing MANIFEST /home/micha/.config/chromium/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/25-21:08:41.631 12198 Level-0 table #5: started
+2020/05/25-21:08:41.722 12198 Level-0 table #5: 1671 bytes OK
+2020/05/25-21:08:41.756 12198 Delete type=0 #3
+2020/05/25-21:08:41.757 12198 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

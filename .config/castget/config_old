@@ -1,0 +1,7 @@
+[*]
+id3contenttype=Podcast
+
+[Sprechstunde]
+url=https://feeds.simplecast.com/vFcVKf8U
+spool=/home/micha/Podcasts/Sprechstunde
+playlist=/home/micha/.config/mpd/playlists/Sprechstunde.m3u
